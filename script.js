@@ -21,19 +21,12 @@ getResult[18] = "Man City ICON 선수팩";
 
 var imgObj = null;
 
-
-
-function init(){
-
-   imgObj = document.getElementById('machine');
-
-   imgObj.style.position= 'relative';
-
-   imgObj.style.left = '0px';
-
-}
 function moveMachine(){
-  init();
+  imgObj = document.getElementById('machine');
+
+  imgObj.style.position= 'relative';
+
+  imgObj.style.left = '0px';
   imgObj.style.animationPlayState="running";
   getItem_message();
 
