@@ -19,18 +19,19 @@ getResult[16] = "Man City ICON 선수팩";
 getResult[17] = "Man City ICON 선수팩";
 getResult[18] = "Man City ICON 선수팩";
 
-var imgObj = null;
+var getImg= new Array();
+getImg[0] = "goal_left.gif";
+getImg[1] = "goal_right.gif";
+getImg[2] = "goal_fail.gif";
 
 function moveMachine(){
-  imgObj = document.getElementById('machine');
+  var imgObj = document.getElementById('machine');
 
   imgObj.style.position= 'relative';
 
   imgObj.style.left = '0px';
   imgObj.style.animationPlayState="running";
   getItem_message();
-
-
 }
 
 function getItem_message() {
@@ -41,4 +42,10 @@ function getItem_message() {
 
 function randomItem(a) {
   return a[Math.floor(Math.random() * a.length)];
+}
+
+
+function shootStart(){
+  var img = document.getElementById('shootImg');
+  img.src=randomItem(getImg);
 }
