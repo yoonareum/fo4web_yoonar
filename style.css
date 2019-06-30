@@ -1,6 +1,6 @@
 <style>
 *{margin:0px;padding:0px;}
-body{margin: 0px; padding: 0px;}
+body{margin: 0px; padding: 0px;  font-family: 'Noto Sans KR', sans-serif; font-display: fallback;}
 html{margin: 0px; padding: 0px;}
 #wrap{
   float:left;
@@ -20,7 +20,7 @@ html{margin: 0px; padding: 0px;}
 
 .gnb_bi{
   position: absolute;
-  width: auto;
+  width: 100% auto;
    top: -10px;
    left: 0px;
   height: 95px;
@@ -49,16 +49,28 @@ html{margin: 0px; padding: 0px;}
 }
 
 .gnb_menu{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  _border:5px solid yellow;
+  width: auto;
+  height: 100%;
 }
 .gnb_menu img{
   width: 120px;
   height: auto;
 
 }
-.gnb_menu a:link {border-bottom: 0px;}
-.gnb_menu a:hover {border-bottom: 5px solid yellowgreen;}
+.gnb_menu span{
+  font-size: 20pt;
+  font-weight: bold;
+  color:black;
+  width: 120px;
+  height: auto;
+}
+.gnb_menu a:link {border-bottom: 0px; text-decoration:none;}
+.gnb_menu a:hover {border-bottom: 5px solid yellowgreen; text-decoration:none;}
+.gnb_menu a:active {border-bottom: 5px solid yellowgreen; text-decoration:none;}
 
 .gnb_start{
   position: absolute;
@@ -271,8 +283,8 @@ position:absolute !important;
 }
 
 .e1_contents{
-  min-width: inherit;
   width: 100% auto;
+  height: auto;
   margin-top: 50px;
   margin-left: 300px;
   margin-right: 150px;
@@ -280,7 +292,7 @@ position:absolute !important;
   _background-color: #0f1a45;
   border-radius: 10px;
   _border:5px solid blue;
-  overflow:hidden;
+
 }
 
 .e1_contents h1{
@@ -296,6 +308,7 @@ position:absolute !important;
 .e1_contents .box{
   float:left;
   width: 100% auto;
+  height: auto;
   padding:20px;
   border-radius: 0 0 10px 10px;
   background-color: white;
@@ -366,7 +379,6 @@ position:absolute !important;
   _background-color: #0f1a45;
   border-radius: 10px;
   _border:5px solid blue;
-  overflow:hidden;
 }
 
 .e2_contents h1{

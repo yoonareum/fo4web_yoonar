@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet" media="none" >
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Noto Sans KR', 'sans-serif']
+        }
+      });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FIFA ONLINE4 Event Page </title>
-    <link rel="stylesheet" media="all" href="style.css"/>
+    <link rel="stylesheet" media="all" href="style.css" media="none" >
     <script type="text/javascript" src="script.js"></script>
+
     <style>
       .contents{
         background-image: url("ho3.png");
@@ -24,13 +33,13 @@
         <div class="gnb_center">
           <ul>
             <li class="gnb_menu">
-              <a href="index.html"><img src="event_main.png"><span class="hidden">이벤트안내</span></a>
+              <a href="index.html"><span>이벤트안내</span></a>
             </li>
             <li class="gnb_menu">
-              <a href="event1.html"><img src="event1.png"><span class="hidden">뽑기왕</span></a>
+              <a href="event1.html"><span>뽑기왕</span></a>
             </li>
             <li class="gnb_menu">
-              <a href="event2.html"><img src="event2.png"><span class="hidden">슈팅왕</span></a>
+              <a href="event2.html"><span>슈팅왕</span></a>
             </li>
           </ul>
         </div>
@@ -55,13 +64,13 @@
                 <span class="text2">팅</span>
                 <span class="text3">왕</span>
             </div>
-            <div class="e2_contents">
+            <div class="e2_contents" id="e2contents">
                 <h1>하루에 한 번 슈팅하고 보상을 받아가세요!</h1>
-                <div class="box">
-                    <div class="in_box"><a href="#" class="shootbtn" id="shootbtn" onclick="shootStart()"><span>슈팅</span></a><img src="shoot.png" id="shootImg">
+                <div class="box" >
+                    <div class="in_box"><a href="#e2contents" class="shootbtn" id="shootbtn" onclick="shootStart()"><span>슈팅</span></a><img src="shoot.png" id="shootImg">
+                      <h3>가장 많은 상품을 뽑은 20분을 추첨해 넥슨 캐시 10000원을 드립니다!</h3>
+                    </div>
                 </div>
-            </div>
-
             <div class="tab">
                 <div class="nav">
                   <ul>

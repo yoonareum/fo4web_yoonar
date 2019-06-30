@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet" media="none">
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Noto Sans KR', 'sans-serif']
+        }
+      });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FIFA ONLINE4 Event Page </title>
-    <link rel="stylesheet" media="all" href="style.css"/>
+    <link rel="stylesheet" media="all" href="style.css" media="none" >
     <script type="text/javascript" src="script.js"></script>
+
     <style>
     .contents{
       background-image: url("ho.png");
@@ -24,13 +33,13 @@
         <div class="gnb_center">
           <ul>
             <li class="gnb_menu">
-              <a href="index.html"><img src="event_main.png"><span class="hidden">이벤트안내</span></a>
+              <a href="index.html"><span>이벤트안내</span></a>
             </li>
             <li class="gnb_menu">
-              <a href="event1.html"><img src="event1.png"><span class="hidden">뽑기왕</span></a>
+              <a href="event1.html"><span>뽑기왕</span></a>
             </li>
             <li class="gnb_menu">
-              <a href="event2.html"><img src="event2.png"><span class="hidden">슈팅왕</span></a>
+              <a href="event2.html"><span>슈팅왕</span></a>
             </li>
           </ul>
         </div>
@@ -55,10 +64,10 @@
                 <span class="text2">기</span>
                 <span class="text3">왕</span>
             </div>
-            <div class="e1_contents">
+            <div class="e1_contents" id="e1contents">
                 <h1>뽑기 시뮬레이션으로 플래티넘 상품을 뽑아보세요!</h1>
                 <div class="box">
-                  <div class="in_box"><a href="#" class="getbtn" id="getbtn" onclick="moveMachine()"><span>뽑기</span></a><img src="box.png">
+                  <div class="in_box"><a href="#e1contents" class="getbtn" id="getbtn" onclick="moveMachine()"><span>뽑기</span></a><img src="box.png">
                   </div>
                   <div class="machine"><img src="machine.png" id="machine"></div>
                 </div>
