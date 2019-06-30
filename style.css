@@ -7,27 +7,34 @@ html{margin: 0px; padding: 0px;}
   width: 100%;
   margin: 0 auto;
   min-width: 1000px;
+  height: auto;
 }
 .gnb{
-  float:left;
+  position: relative;
   width:100%;
-  height:30px;
+  height:95px;
   background:white;
   border-bottom: 1px solid lightgray;
+  _border:5px solid blue;
 }
 
 .gnb_bi{
   position: absolute;
-   top: 0px;
+  width: auto;
+   top: -10px;
    left: 0px;
-  height: 80px;
+  height: 95px;
+  _border:5px solid red;
 }
 .gnb_center{
   width:100%;
-  height: 80px;
+  height: 95px;
   top: 0px;
   background:white;
+  _border:5px solid black;
+  margin: 0 auto;
 }
+
 .gnb_center ul{
   text-align: center;
   list-style-type: none;
@@ -41,17 +48,31 @@ html{margin: 0px; padding: 0px;}
   border-left: none;
 }
 
+.gnb_menu{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.gnb_menu img{
+  width: 120px;
+  height: auto;
+
+}
 .gnb_menu a:link {border-bottom: 0px;}
 .gnb_menu a:hover {border-bottom: 5px solid yellowgreen;}
 
 .gnb_start{
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 0px;
-  height: 80px;
+  height: 90px;
+  _border:5px solid pink;
+  width: auto;
 }
 
-.gnb_start img{}
+.gnb_start img{
+
+  width: auto;
+}
 
 .hidden{
 position:absolute !important;
@@ -64,7 +85,8 @@ position:absolute !important;
 
 .container{
   width:100% auto;
-  margin-top: 100px;
+  top: -10px;
+  margin: 0 auto;
   height: 0 auto;
   overflow: hidden;
   _border:5px solid black;
@@ -100,11 +122,13 @@ position:absolute !important;
   margin-top: 50px;
   margin-left: 300px;
   margin-right: 300px;
+  width: 100% auto;
+  height: auto;
   _border:5px solid:black;
   _background-color: #0f1a45;
   border-radius: 10px;
   _border:5px solid blue;
-  overflow:hidden;
+  overflow:visible;
 
 }
 
@@ -116,6 +140,7 @@ position:absolute !important;
 
 .right_header img{
   width: 100%;
+  height: auto;
   margin: 0 auto;
   border-radius: 10px 10px 0 0;
 
@@ -145,7 +170,7 @@ position:absolute !important;
 
 .tab{
   border-radius: 10px;
-  width: 100%;
+  width: 100% auto;
   height: 850px;
   margin-top: 10px;
 }
@@ -154,11 +179,13 @@ position:absolute !important;
 	float: left;
   border-radius: 10px;
   margin: 0 auto;
-
+  width: 100% auto;
+  height: auto;
 }
 
 .tabBtn a{
-  width: 100%;
+  width: 100% auto;
+  height: auto;
   font-size: 32pt;
   border-radius: 10px 0 0 0;
   font-weight: bold;
@@ -279,6 +306,7 @@ position:absolute !important;
   position: relative;
   margin: 0 30px;
   float:left;
+
 }
 
 .machine{
@@ -321,7 +349,67 @@ position:absolute !important;
 }
 .getbtn span{ display:none; }
 
+.e2_header{
+  width: 100% auto;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 150px;
+}
 
+.e2_contents{
+  min-width: inherit;
+  width: 100% auto;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 150px;
+  _border:5px solid:black;
+  _background-color: #0f1a45;
+  border-radius: 10px;
+  _border:5px solid blue;
+  overflow:hidden;
+}
+
+.e2_contents h1{
+  margin:0 auto;
+  padding:10px;
+  border-radius: 10px  10px 0 0;
+  background: yellowgreen;
+  text-align: center;
+  color: #0f1a45;
+  _border:5px solid red;
+}
+
+.e2_contents .box{
+  float:left;
+  width: 100% auto;
+  padding:20px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  _border:5px solid gray;
+}
+
+.shootbtn{
+  display:block;
+  width:200px;
+  height:200px;
+  background:url("shootbtn.png") no-repeat;
+  position: absolute;
+  bottom: 50px;
+  top:0px;
+  right: 0px;
+}
+
+.shootbtn:hover{
+  display:block;
+  width:200px;
+  height:200px;
+  background:url("shootbtn2.png") no-repeat;
+  position: absolute;
+  bottom: 50px;
+  top:0px;
+  right: 0px;
+}
+.shootbtn span{ display:none; }
 
 .footer{
   float:left;
