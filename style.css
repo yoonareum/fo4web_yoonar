@@ -95,6 +95,37 @@ position:absolute !important;
  clip:rect(1px, 1px, 1px, 1px);
 }
 
+.nav{
+  position: fixed;
+  width:150px;
+  right:10px;
+  margin-top:60px;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul{
+  list-style-type: none;
+  margin:0px;
+  padding: 0px;
+  border-top: 3px solid yellowgreen;
+  background-color: #0f1a45;
+}
+
+.nav ul li{
+  font-size: 12pt;
+  color:#0f1a45;
+  padding: 0px;
+  margin-top:8px;
+  margin-bottom: 8px;
+}
+
+.nav ul li a:link, ul li a:visited {display: block; color:white; text-decoration: none; padding: 3px;}
+.nav ul li a:hover { display: block; color:#000039; text-decoration: none; background-color: pink; padding: 3px;}
+.nav ul h3 a:link, ul h3 a:visited {display: block; color:#000039; text-decoration: none; }
+
+.nav ul h3{background-color: yellowgreen; padding: 8px; }
+
 .container{
   width:100% auto;
   top: -10px;
@@ -106,7 +137,6 @@ position:absolute !important;
   background:linear-gradient( to bottom, #000039 70%, lightgray );
   text-align: center;
   position: relative;
-
 }
 
 .contents{
@@ -244,15 +274,7 @@ position:absolute !important;
 	z-index: 1;
 }
 
-.nav{
-  position: fixed;
-  width: 150px;
-  overflow: hidden;
-  right: 0px;
-  margin-right: 70px;
-  padding: 0;
-  background-color: white;
-}
+
 
 .e1_header{
   width: 100% auto;
