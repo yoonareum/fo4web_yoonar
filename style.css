@@ -261,12 +261,14 @@ position:absolute !important;
   font-size: 32pt;
   _text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
   color: navy;
+  font-weight: bold;
 }
 
 .tab_content p .text4{
     font-size: 42pt;
-    _text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
     color: hotpink;
+    font-weight: bold;
 }
 
 .tab .tabBtn:nth-of-type(1) .tab_content
