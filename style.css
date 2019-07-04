@@ -3,7 +3,7 @@
 html{margin: 0px; padding: 0px; font-family: 'Noto Sans KR', sans-serif;}
 body{margin: 0px; padding: 0px;}
 
-<!-- 웹페이지 전체 영역 -->
+/* 웹페이지 전체 영역 */
 #wrap{
   float:left;
   width: 100%;
@@ -12,7 +12,7 @@ body{margin: 0px; padding: 0px;}
   height: auto;
 }
 
-<!-- 상단 GNB -->
+/* 상단 GNB */
 .gnb{
   position: relative;
   width:100%;
@@ -102,7 +102,7 @@ position:absolute !important;
  clip:rect(1px, 1px, 1px, 1px);
 }
 
-<!-- 우측 플로팅 메뉴 -->
+/*우측 플로팅 메뉴 */
 .nav{
   position: fixed;
   width:150px;
@@ -136,7 +136,7 @@ position:absolute !important;
 .nav ul h3{background-color: yellowgreen; padding: 8px; }
 
 
-<!-- GNB 제외한 본문 영역 -->
+/* GNB 제외한 본문 영역 */
 .container{
   width:100% auto;
   top: -10px;
@@ -172,14 +172,14 @@ position:absolute !important;
 
 }
 
-<!-- 이벤트 안내 메인 이미지 -->
+/* 이벤트 안내 메인 이미지 */
 .right_header{
   margin: 0 auto;
   width: 100% auto;
 }
 
 
-<!-- 메인 이미지 애니메이션 -->
+/* 메인 이미지 애니메이션 */
 .right_header img{
   width: 100%;
   height: auto;
@@ -210,7 +210,7 @@ position:absolute !important;
 }
 
 
-<!-- 이벤트 안내 탭 영역 -->
+/* 이벤트 안내 탭 영역 */
 .tab{
   border-radius: 10px;
   width: 100% auto;
@@ -291,7 +291,7 @@ position:absolute !important;
 }
 
 
-<!-- 이벤트1 -->
+/* 이벤트1 */
 .e1_header{
   width: 100% auto;
   margin-top: 0px;
@@ -299,7 +299,7 @@ position:absolute !important;
   margin-right: 150px;
 }
 
-<!-- 타이틀 글자 꾸미기 -->
+/* 타이틀 글자 꾸미기 */
 .text1{
   font-size: 120pt;
   font-weight: bold;
@@ -391,7 +391,7 @@ position:absolute !important;
 .getbtn span{ display:none; }
 
 
-<!-- 이벤트2 -->
+/* 이벤트2 */
 .e2_header{
   width: 100% auto;
   margin-top: 0px;
@@ -458,7 +458,7 @@ position:absolute !important;
 .shootbtn span{ display:none; }
 
 
-<!-- 푸터 -->
+/* 푸터 */
 .footer{
   float:left;
   width:100%;

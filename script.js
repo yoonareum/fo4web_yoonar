@@ -1,3 +1,4 @@
+// 뽑기왕 랜덤 아이템 데이터 배열
 var getResult= new Array();
 getResult[0] = "[TC 업데이트] 200명 지명 상자(8강)";
 getResult[1] = "TC 85+ 강화 선수팩 (5강)";
@@ -19,26 +20,20 @@ getResult[16] = "Man City ICON 선수팩";
 getResult[17] = "Man City ICON 선수팩";
 getResult[18] = "Man City ICON 선수팩";
 
+// 슈팅왕 랜덤 결과 배열
 var getImg= new Array();
 getImg[0] = "goal_left.gif";
 getImg[1] = "goal_right.gif";
 getImg[2] = "goal_fail.gif";
 
+// 뽑기왕 버튼 이벤트
 function moveMachine(){
   var mimg = document.getElementById('machine');
   machine.src="machine.gif";
-  /*var mImg = document.getElementById('machine');
-  if (mImg.style.animationPlayState == 'paused') {
-      mImg.style.animationPlayState = 'running';
-  }
-  else {
-      mImg.style.animationPlayState = 'paused';
-      }
-      */
-      getItem_message();
+  getItem_message();
 }
 
-
+// 뽑기 후 결과 얼럿
 function getItem_message() {
   setTimeout(function() {
   	alert("["+randomItem(getResult)+"] 에 당첨되셨습니다.");
@@ -47,12 +42,12 @@ function getItem_message() {
 
 }
 
-
+// 슈팅왕 랜덤으로 결과 선택
 function randomItem(a) {
   return a[Math.floor(Math.random() * a.length)];
 }
 
-
+// 기존 이미지에 결과 이미지로 변경함
 function shootStart(){
   var img = document.getElementById('shootImg');
   img.src=randomItem(getImg);
