@@ -1,24 +1,21 @@
 // 뽑기왕 랜덤 아이템 데이터 배열
 var getResult= new Array();
-getResult[0] = "[TC 업데이트] 200명 지명 상자(8강)";
-getResult[1] = "TC 85+ 강화 선수팩 (5강)";
-getResult[2] = "BP카드 100,000,000";
-getResult[3] = "[TC 업데이트] OVR 88+ 강화 선수팩 (5강)";
-getResult[4] = "TC, GR 다이아 강화 선수팩 (5강)";
-getResult[5] = "BP카드 50,000,000";
-getResult[6] = "MC ICON, TC 포함 OVR 93+ 선수팩";
-getResult[7] = "[TC 업데이트] OVR 80+ 강화 선수팩 (5강)";
-getResult[8] = "TC 클래스 OVR 88+ 선수팩";
-getResult[9] = "BP카드 10,000,000";
-getResult[10] = "MC ICON, TC 포함 OVR 88+ 선수팩";
-getResult[11] = "[TC 업데이트] OVR 80+ 강화 선수팩 (2~5강)";
-getResult[12] = "TC 클래스 OVR 83+ 선수팩";
-getResult[13] = "BP카드 5,000,000";
-getResult[14] = "MC ICON, TC 포함 OVR 80+ 선수팩";
-getResult[15] = "Man City ICON 선수팩";
-getResult[16] = "Man City ICON 선수팩";
-getResult[17] = "Man City ICON 선수팩";
-getResult[18] = "Man City ICON 선수팩";
+getResult[0] = "▶플래티넘◀\n[TC 업데이트] 200명 지명 상자(8강)";
+getResult[1] = "▶플래티넘◀\n TC 85+ 강화 선수팩 (5강)";
+getResult[2] = "▶플래티넘◀\n BP카드 100,000,000";
+getResult[3] = "▶플래티넘◀\nMan City ICON 선수팩";
+getResult[4] = "▷골드◁\n [TC 업데이트] OVR 88+ 강화 선수팩 (5강)";
+getResult[5] = "▷골드◁\n TC, GR 다이아 강화 선수팩 (5강)";
+getResult[6] = "▷골드◁\n BP카드 50,000,000";
+getResult[7] = "▷골드◁\n MC ICON, TC 포함 OVR 93+ 선수팩";
+getResult[8] = "▷실버◁\n[TC 업데이트] OVR 80+ 강화 선수팩 (5강)";
+getResult[9] = "▷실버◁\nTC 클래스 OVR 88+ 선수팩";
+getResult[10] = "▷실버◁\nBP카드 10,000,000";
+getResult[11] = "▷실버◁\nMC ICON, TC 포함 OVR 88+ 선수팩";
+getResult[12] = "▷브론즈◁\n[TC 업데이트] OVR 80+ 강화 선수팩 (2~5강)";
+getResult[13] = "▷브론즈◁\nTC 클래스 OVR 83+ 선수팩";
+getResult[14] = "▷브론즈◁\nBP카드 5,000,000";
+getResult[15] = "▷브론즈◁\nMC ICON, TC 포함 OVR 80+ 선수팩";
 
 // 슈팅왕 랜덤 결과 배열
 var getImg= new Array();
@@ -36,7 +33,7 @@ function moveMachine(){
 // 뽑기 후 결과 얼럿
 function getItem_message() {
   setTimeout(function() {
-  	alert("["+randomItem(getResult)+"] 에 당첨되셨습니다.");
+  	alert(randomItem(getResult)+"에 당첨되셨습니다.");
 
 }, 1800);
 
