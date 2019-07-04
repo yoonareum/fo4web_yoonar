@@ -24,21 +24,27 @@ getImg[0] = "goal_left.gif";
 getImg[1] = "goal_right.gif";
 getImg[2] = "goal_fail.gif";
 
-var imgObj = null;
-
 function moveMachine(){
-  imgObj = document.getElementById('machine');
-  imgObj.style.animationPlayState='running';
-  imgObj.style.position= 'relative';
-  imgObj.style.left = '0px';
-
-  getItem_message(imgObj);
+  var mimg = document.getElementById('machine');
+  machine.src="machine.gif";
+  /*var mImg = document.getElementById('machine');
+  if (mImg.style.animationPlayState == 'paused') {
+      mImg.style.animationPlayState = 'running';
+  }
+  else {
+      mImg.style.animationPlayState = 'paused';
+      }
+      */
+      getItem_message();
 }
 
-function getItem_message(a) {
+
+function getItem_message() {
   setTimeout(function() {
   	alert("["+randomItem(getResult)+"] 에 당첨되셨습니다.");
+
 }, 1800);
+
 }
 
 

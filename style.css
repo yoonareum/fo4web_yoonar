@@ -2,6 +2,7 @@
 *{margin:0px;padding:0px;}
 html{margin: 0px; padding: 0px; font-family: 'Noto Sans KR', sans-serif; font-display:fallback;}
 body{margin: 0px; padding: 0px;}
+
 #wrap{
   float:left;
   width: 100%;
@@ -39,9 +40,12 @@ body{margin: 0px; padding: 0px;}
   text-align: center;
   list-style-type: none;
   padding-left: 0px;
+  overflow: hidden;
+
 }
 .gnb_center ul li{
   display:inline-block;
+  box-sizing: border-box;
 }
 
 .gnb_center ul li:first-child{
@@ -110,6 +114,7 @@ position:absolute !important;
   padding: 0px;
   border-top: 3px solid yellowgreen;
   background-color: #0f1a45;
+  overflow: hidden;
 }
 
 .nav ul li{
@@ -294,7 +299,7 @@ position:absolute !important;
 .e1_header{
   width: 100% auto;
   margin-top: 0px;
-  margin-left: 300px;
+  margin-left: 200px;
   margin-right: 150px;
 }
 
@@ -322,9 +327,8 @@ position:absolute !important;
 
 .e1_contents{
   width: 100% auto;
-  height: auto;
   margin-top: 50px;
-  margin-left: 300px;
+  margin-left: 200px;
   margin-right: 150px;
   _border:5px solid:black;
   _background-color: #0f1a45;
@@ -359,25 +363,12 @@ position:absolute !important;
   position: relative;
   margin: 0 30px;
   float:left;
-
 }
 
 .machine{
   position: absolute;
 }
 
-#machine{
-  animation-name: move;
-  animation-duration: 2s;
-  animation-play-state: paused;
-}
-
-@keyframes move {
-  0% {transform: translate(0);}
-  70% {transform: translateX(300px);}
-  100% {
-    transform: translate(300px,180px);}
-}
 
 .getbtn{
   display:block;
